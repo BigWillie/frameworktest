@@ -10,13 +10,16 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/lit": "^4.0.1",
     "@astrojs/react": "^3.0.10",
     "@astrojs/svelte": "^5.0.3",
     "@astrojs/tailwind": "^5.1.0",
     "@astrojs/vue": "^4.0.8",
     "@types/react": "^18.2.58",
     "@types/react-dom": "^18.2.19",
+    "@webcomponents/template-shadowroot": "^0.2.1",
     "astro": "^4.4.3",
+    "lit": "^3.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "svelte": "^4.2.11",

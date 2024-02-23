@@ -4,6 +4,7 @@ import TodoListReact from '../components/react/TodoList.jsx';
 import TodoListSvelte from '../components/svelte/TodoList.svelte';
 import TodoListVueOptions from '../components/vue/TodoListOptions.vue';
 import TodoListVueComposition from '../components/vue/TodoListComposition.vue';
+import { TodoList } from '../components/lit/TodoList.js';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -16,6 +17,8 @@ import TodoListVueComposition from '../components/vue/TodoListComposition.vue';
 		<TodoListVueOptions client:only="vue" />
 		<h2>Vue composition API</h2>
 		<TodoListVueComposition client:only="vue" />
+		<h2>Lit</h2>
+		<TodoList client:load />
 	</main>
 </Layout>
 
