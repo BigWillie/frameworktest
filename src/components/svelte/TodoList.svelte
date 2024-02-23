@@ -14,6 +14,7 @@
       // Prevent adding empty todos
       return;
     }
+    
     const newTodo = {
       id: todos.length ? Math.max(...todos.map(todo => todo.id)) + 1 : 1,
       text: newTodoText,
