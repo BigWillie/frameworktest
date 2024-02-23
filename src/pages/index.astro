@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TodoListReact from '../components/react/TodoList.jsx';
+import TodoListSvelte from '../components/svelte/TodoList.svelte';
+import TodoListVueOptions from '../components/vue/TodoListOptions.vue';
+import TodoListVueComposition from '../components/vue/TodoListComposition.vue';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<h2>Svelte</h2>
+		<TodoListSvelte  client:only="svelte" />
+		<h2>React</h2>
+		<TodoListReact client:only="react" />
+		<h2>Vue Options API</h3>
+		<TodoListVueOptions client:only="vue" />
+		<h2>Vue composition API</h2>
+		<TodoListVueComposition client:only="vue" />
+	</main>
+</Layout>
+
+<style>
+	body {
+		padding: 4rem;
+	}
+	h2 {
+		margin-top: 2rem;
+		text-transform: uppercase;
+	}
+</style>
