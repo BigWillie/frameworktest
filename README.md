@@ -1,40 +1,22 @@
-# Astro Starter Kit: Basics
+# Todo Expriements
 
-```sh
-npm create astro@latest -- --template basics
-```
+This repository contains implementations of a dynamic to-do list component built in three popular frontend frameworks: Svelte, React, and Vue.  Designed to show their syntax, reactivity models, and component structuring.
+Each version of the component offers the following functionalities:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+- **Adding New Todos**: Users can add tasks to their to-do list via an input field, either by pressing "Enter" or clicking an "Add Todo" button. Each task is added with a unique identifier and marked as incomplete by default.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Task Display and Management**: The to-do items are displayed in a list, with each task featuring a "Remove" button for deletion. Tasks can be marked as completed (e.g., a strike-through effect for completed tasks).
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+- **Interactive List Reordering**: Users can reorder tasks via drag-and-drop.
 
-## 🚀 Project Structure
+- **Accessibility Features**: The component supports keyboard interactions, allowing users to mark tasks as completed/incomplete without relying solely on mouse input.
 
-Inside of your Astro project, you'll see the following folders and files:
+- **Visual Feedback**: A reversed string of all task texts, updated as tasks are added or removed. This is to demonstrate how each framework reactively computes values.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+These implementations serve as a comparative study of the Svelte, React, and Vue frameworks, showcasing
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+I have used Astro to house them all.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
@@ -49,6 +31,4 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
