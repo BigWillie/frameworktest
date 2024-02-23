@@ -9,6 +9,7 @@
     @keyup.enter="addTodo"
   />
   <button @click="addTodo" class="p-2 bg-blue-500 text-white">Add Todo</button>
+  <span>{{ reversedTodosString }}</span>
 </div>
   <ul class="border-2 border-rose-500">
     <li v-for="(todo, index) in todos" :key="todo.id"
@@ -46,13 +47,17 @@ export default {
       newTodoText: '',
     };
   },
+  computed: {
+    // Step 2: Define the computed property
+    reversedTodosString() {
+      return this.todos.map(todo => todo.text).join(', ').split('').reverse().join('');
+    }
+  },
   methods: {
     addTodo() {
       if (!this.newTodoText.trim()) return; // Prevent adding empty todos
-      
       // Find the highest current ID and add 1 to ensure uniqueness
       const newId = this.todos.length > 0 ? Math.max(...this.todos.map(todo => todo.id)) + 1 : 1;
-
       // Add the new todo
       this.todos.push({ id: newId, text: this.newTodoText, done: false });
 
