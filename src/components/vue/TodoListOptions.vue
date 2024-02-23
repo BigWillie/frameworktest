@@ -8,7 +8,7 @@
     class="mr-2"
     @keyup.enter="addTodo"
   />
-  <button @click="addTodo" class="p-2 bg-blue-500 text-white">Add Todo</button>
+  <button @click="addTodo" class="p-2 bg-blue-500 text-white mr-2">Add Todo</button>
   <span>{{ reversedTodosString }}</span>
 </div>
   <ul class="border-2 border-rose-500">

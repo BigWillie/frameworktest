@@ -69,8 +69,8 @@ function TodoApp() {
           className="mr-2"
           onKeyUp={(e) => e.key === 'Enter' && addTodo()}
         />
-        <button onClick={addTodo} className="p-2 bg-blue-500 text-white">Add Todo</button>
-        <span>{reversedTodosString}</span>
+        <button onClick={addTodo} className="p-2 bg-blue-500 text-white mr-2">Add Todo</button>
+         <span>{reversedTodosString}</span>
       </div>
       <ul className="border-2 border-rose-500">
         {todos.map((todo, index) => (
