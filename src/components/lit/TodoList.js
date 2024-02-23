@@ -66,7 +66,6 @@ export class TodoList extends LitElement {
           <button @click=${this.addTodo} class="p-2 bg-blue-500 text-white">Add Todo</button>
           <span>${this.todos.map(todo => todo.text).join(', ').split('').reverse().join('')}</span>
         </div>
-        <p>Lit has its shadow DOM and scoped styles, so the styles are not leaking out of the component, making it a pain to include tailwind. Also not sure how you'd share state across components.</p>
         <ul class="border-2 border-rose-500">
           ${this.todos.map((todo, index) => html`
             <li class="flex items-center justify-between p-4 hover:bg-gray-50 cursor-pointer ${todo.done ? 'text-gray-400 line-through' : 'text-gray-800'} ${index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}">
@@ -77,6 +76,7 @@ export class TodoList extends LitElement {
             </li>
           `)}
         </ul>
+        <p>Lit has its shadow DOM and scoped styles, so the styles will not out of the component - great! However, Lit components can't receive global styles, making it a pain to include tailwind. Also not sure how you'd share state across components.</p>
       </div>
     `;
   }
