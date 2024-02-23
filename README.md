@@ -1,6 +1,6 @@
 # Todo Expriements
 
-This repository contains implementations of a dynamic to-do list component built in three popular frontend frameworks: Svelte, React, and Vue.  Designed to show their syntax, reactivity models, and component structuring.
+This repository contains implementations of a dynamic to-do list component built in three popular frontend frameworks: Svelte, React, Vue and Lit.  Designed to show their syntax, reactivity models, and component structuring.
 Each version of the component offers the following functionalities:
 
 - **Adding New Todos**: Users can add tasks to their to-do list via an input field, either by pressing "Enter" or clicking an "Add Todo" button. Each task is added with a unique identifier and marked as incomplete by default.
@@ -12,8 +12,6 @@ Each version of the component offers the following functionalities:
 - **Accessibility Features**: The component supports keyboard interactions, allowing users to mark tasks as completed/incomplete without relying solely on mouse input.
 
 - **Visual Feedback**: A reversed string of all task texts, updated as tasks are added or removed. This is to demonstrate how each framework reactively computes values.
-
-These implementations serve as a comparative study of the Svelte, React, and Vue frameworks, showcasing
 
 I have used Astro to house them all.
 

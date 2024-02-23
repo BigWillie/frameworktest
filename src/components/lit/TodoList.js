@@ -10,7 +10,7 @@ export class TodoList extends LitElement {
   constructor() {
     super();
     this.todos = [
-      { id: 1, text: "Learn Svelte", done: false },
+      { id: 1, text: "Learn Lit", done: false },
       { id: 2, text: "Build a to-do app", done: false },
     ];
     this.newTodoText = '';
